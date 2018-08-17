@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hellison
- * Date: 8/14/18
- * Time: 9:27 AM
- */
 
 namespace App\Http\Controllers;
-
 
 use App\Recipient;
 use App\VoucherPool;
@@ -15,11 +8,17 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
+/**
+ * Class VoucherPoolController
+ *
+ * @package App\Http\Controllers
+ */
 class VoucherPoolController extends Controller
 {
 
     /**
      * Retrieve all vouchers
+     *
      * @return Response
      */
     public function showAllVouchers()
@@ -28,61 +27,74 @@ class VoucherPoolController extends Controller
     }
 
     /**
-     * Retrieve all vouchers By Recipient Id.
-     * @param  Request $request
+     * Retrieve all vouchers By Recipient.
+     *
+     * @param Request $request email required
+     *
      * @return Response
      */
-    public function showAllVouchersByEmail(Request $request)
+    public function showAllByEmail(Request $request)
     {
-        $this->validate($request, [
-            'email' => 'required|email'
-        ]);
+        $this->validate($request, ['email' => 'required|email']);
+
         $recipient = Recipient::where('email', $request->input('email'))->first();
         if ($recipient === null) {
             return response()->json(['error' => 'Recipient not found!'], 400);
         } else {
-            $vouchers = VoucherPool::where('recipient_id', $recipient->id)->with('specialoffer')->get();
-            return response()->json([
-                'data' => [
-                    'recipient' => $recipient,
-                    'vouchers' => $vouchers
-                ]
-            ]);
+            $vouchers = VoucherPool::where(
+                'recipient_id',
+                $recipient->id
+            )->with(
+                'specialoffer'
+            )->get();
+
+            return response()->json(
+                ['data' => ['recipient' => $recipient, 'vouchers' => $vouchers]]
+            );
         }
     }
 
 
     /**
-     * Validates a voucher based on a given email and code and returns its status if it cant be used
-     * or use it and return the percentage of discount.
-     * @param Request $request
+     * Validates a voucher based on a given email and code and returns
+     * its status if it cant be used or use it and return the percentage of discount.
+     *
+     * @param Request $request email and code required
+     *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function validateVoucherCode(Request $request)
+    public function validateCode(Request $request)
     {
-        $this->validate($request, [
-            'email' => 'required|email',
-            'code' => 'required'
-        ]);
+        $this->validate($request, ['email' => 'required|email', 'code' => 'required']);
 
-        $voucher = VoucherPool::where('code',
-            $request->input('code'))->with('recipients')->with('specialoffer')->first();
+        $code = $request->input('code');
+
+        $voucher = VoucherPool::where(
+            'code',
+            $code
+        )->with(
+            'recipients'
+        )->with(
+            'specialoffer'
+        )->first();
+
         if (null === $voucher) {
             return response()->json(['error' => 'Voucher not found'], 400);
         } else {
             if ($voucher->recipients->email === $request->input('email')) {
                 if ($voucher->used) {
-                    return response()->json(['error' => 'Voucher already used!'], 400);
+                    return response()->json(
+                        ['error' => 'Voucher already used!'],
+                        400
+                    );
                 } else {
                     if ($voucher->expires_at < new Carbon()) {
-                        return response()->json(['error' => 'Voucher expired!'], 400);
+                        return response()->json(
+                            ['error' => 'Voucher expired!'],
+                            400
+                        );
                     } else {
-                        $voucher->used = true;
-                        $voucher->used_at = new Carbon();
-                        $voucher->update();
-
-                        return response()->json(['percentage_discount' => $voucher->specialoffer->percentage_discount],
-                            201);
+                        return $this->useVoucher($voucher);
                     }
                 }
             } else {
@@ -94,7 +106,9 @@ class VoucherPoolController extends Controller
 
     /**
      * Retrieve a voucher By Id.
-     * @param  int $id
+     *
+     * @param int $id required
+     *
      * @return Response
      */
     public function showOneVoucher($id)
@@ -105,7 +119,9 @@ class VoucherPoolController extends Controller
 
     /**
      * Create a new voucher
-     * @param  Request $request
+     *
+     * @param Request $request fill voucher model
+     *
      * @return Response
      */
     public function create(Request $request)
@@ -119,7 +135,9 @@ class VoucherPoolController extends Controller
     /**
      * Update a voucher
      * @param $id
-     * @param Request $request
+     *
+     * @param Request $request to update
+     *
      * @return \Illuminate\Http\JsonResponse
      */
     public function update($id, Request $request)
@@ -155,5 +173,17 @@ class VoucherPoolController extends Controller
         ]);
     }
 
+    /**
+     * Update voucher and return its percentage_discount
+     * @param $voucher
+     * @return \Illuminate\Http\JsonResponse
+     */
+    private function useVoucher($voucher): \Illuminate\Http\JsonResponse
+    {
+        $voucher->used = true;
+        $voucher->used_at = new Carbon();
+        $voucher->update();
 
+        return response()->json(['percentage_discount' => $voucher->specialoffer->percentage_discount],201);
+    }
 }

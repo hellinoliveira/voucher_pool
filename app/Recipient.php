@@ -27,5 +27,4 @@ class Recipient extends Model
     {
         return $this->hasMany(VoucherPool::class);
     }
-
 }

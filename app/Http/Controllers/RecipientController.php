@@ -8,9 +8,7 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Recipient;
-use App\VoucherPool;
 use Illuminate\Http\Request;
 
 class RecipientController extends Controller

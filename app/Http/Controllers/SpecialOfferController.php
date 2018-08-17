@@ -63,5 +63,4 @@ class SpecialOfferController extends Controller
             'percentage_discount' => 'required'
         ]);
     }
-
 }

@@ -15,8 +15,8 @@ class SpecialOfferTableSeeder extends Seeder
 
         for ($i = 0; $i < 50; $i++) {
             \App\SpecialOffer::create([
-                'name' => $faker->domainName,
-                'percentage_discount' => $faker->randomFloat(null, 1, 100)
+                'name' => $faker->name,
+                'percentage_discount' => $faker->randomNumber(2),
             ]);
         }
     }

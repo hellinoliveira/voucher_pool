@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
          $this->call('RecipientTableSeeder');
          $this->call('SpecialOfferTableSeeder');
+         $this->call('VoucherPoolTableSeeder');
     }
 }

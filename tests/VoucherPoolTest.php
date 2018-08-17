@@ -10,27 +10,37 @@ class VoucherPoolTest extends TestCase
 {
 
     /**
-     * /products [POST]
+     * /voucher/validate [PUT]
      */
-    public function testShouldUseVoucher(){
+    public function testNotFindVoucher()
+    {
         $parameters = [
-            'product_name' => 'Infinix',
-            'product_description' => 'NOTE 4 5.7-Inch IPS LCD (3GB, 32GB ROM) Android 7.0 ',
+            'code' => '123456789',
+            'email' => 'hellison.oliveira@gmai.com',
         ];
-        $this->post("products", $parameters, []);
-        $this->seeStatusCode(200);
-        $this->seeJsonStructure(
-            ['data' =>
-                [
-                    'product_name',
-                    'product_description',
-                    'created_at',
-                    'updated_at',
-                    'links'
-                ]
-            ]
-        );
-
+        $this->put("api/vouchers/validate", $parameters, []);
+        $this->seeStatusCode(400);
     }
 
+    /**
+     * /voucher/validate [PUT]
+     */
+    public function testFindVoucher()
+    {
+        $parameters = [
+            'code' => '123456789',
+            'email' => 'reichel.kay@pacocha.com',
+        ];
+        $this->put("api/vouchers/validate", $parameters, []);
+        $this->seeStatusCode(200);
+//        $this->seeJsonStructure(
+//            ['data' =>
+//                [
+//                    'error'
+//                ]
+//            ]
+//        );
+
+
+    }
 }

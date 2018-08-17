@@ -28,9 +28,9 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->put('vouchers/{id}', ['uses' => 'VoucherPoolController@update']);
 
-    $router->get('vouchers/recipients', ['uses' => 'VoucherPoolController@showAllVouchersByEmail']);
+    $router->get('vouchers/recipients', ['uses' => 'VoucherPoolController@showAllByEmail']);
 
-    $router->put('vouchers/validate', ['uses' => 'VoucherPoolController@validateVoucherCode']);
+    $router->put('vouchers/validate', ['uses' => 'VoucherPoolController@validateCode']);
 
 //offers routes
     $router->get('offers', ['uses' => 'SpecialOfferController@showAllOffers']);

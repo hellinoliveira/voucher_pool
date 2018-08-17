@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Artisan;
 abstract class TestCase extends Laravel\Lumen\Testing\TestCase
 {
     use \Laravel\Lumen\Testing\DatabaseMigrations;
+
     /**
      * Creates the application.
      *
@@ -12,7 +13,7 @@ abstract class TestCase extends Laravel\Lumen\Testing\TestCase
      */
     public function createApplication()
     {
-        return require __DIR__.'/../bootstrap/app.php';
+        return require __DIR__ . '/../bootstrap/app.php';
     }
 
     public function setUp()

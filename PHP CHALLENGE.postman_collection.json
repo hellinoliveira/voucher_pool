@@ -1,0 +1,272 @@
+{
+	"variables": [],
+	"info": {
+		"name": "PHP CHALLENGE",
+		"_postman_id": "9cc9e6ba-c048-aa5b-f695-32fb35101359",
+		"description": "VouCherPool Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "showAllVouchers",
+			"request": {
+				"url": "localhost:8000/api/vouchers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "The showAllVouchers method checks for all the vouchers resources."
+			},
+			"response": [
+				{
+					"id": "22d68065-a543-4853-bc40-4ea8a03ff6b1",
+					"name": "showAllVouchers",
+					"originalRequest": {
+						"url": "localhost:8000/api/vouchers",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 14 Aug 2018 12:42:08 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "host",
+							"key": "host",
+							"value": "localhost:8000",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.20-2",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 55,
+					"body": "[]"
+				}
+			]
+		},
+		{
+			"name": "Voucher@showAllVouchersByEmail",
+			"request": {
+				"url": {
+					"raw": "localhost:8000/api/vouchers/recipients?email=reichel.kay@pacocha.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vouchers",
+						"recipients"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "reichel.kay@pacocha.com",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "show all vouchers for a given email"
+			},
+			"response": []
+		},
+		{
+			"name": "Vouchers@create",
+			"request": {
+				"url": "localhost:8000/api/vouchers",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "expires_at",
+							"value": "2018-08-18 16:55:02",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "POST "
+			},
+			"response": []
+		},
+		{
+			"name": "recipient@create",
+			"request": {
+				"url": {
+					"raw": "localhost:8000/api/recipients?name=Hellison Teodoro&email=hellison.",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"recipients"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Hellison Teodoro",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "hellison.",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": "Create a new recipient using POST method"
+			},
+			"response": []
+		},
+		{
+			"name": "recipient@update",
+			"request": {
+				"url": {
+					"raw": "localhost:8000/api/recipients/1?name=Hellison Teodoro&email=hellison@hotmail.fr",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"recipients",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Hellison Teodoro",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "hellison@hotmail.fr",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Hellison Oliveira",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hellison@hotmail.fr",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Edit a recipient using PUT method"
+			},
+			"response": []
+		},
+		{
+			"name": "showAllOffers",
+			"request": {
+				"url": "localhost:8000/api/offers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "The offers route checks for all the offers resources."
+			},
+			"response": []
+		},
+		{
+			"name": "Offer@create",
+			"request": {
+				"url": {
+					"raw": "localhost:8000/api/offers?name=mega discount&percentage_discount=90",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"offers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "mega discount",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "percentage_discount",
+							"value": "90",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": "Create a new offer using POST method"
+			},
+			"response": []
+		}
+	]
+}

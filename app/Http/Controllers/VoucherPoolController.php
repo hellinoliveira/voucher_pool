@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 
 use App\Recipient;
 use App\VoucherPool;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -23,7 +24,7 @@ class VoucherPoolController extends Controller
      */
     public function showAllVouchers()
     {
-        return response()->json(VoucherPool::with('recipient')::all());
+        return response()->json(VoucherPool::all());
     }
 
     /**
@@ -52,6 +53,46 @@ class VoucherPoolController extends Controller
 
 
     /**
+     * Validates a voucher based on a given email and code and returns its status if it cant be used
+     * or use it and return the percentage of discount.
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function validateVoucherCode(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required|email',
+            'code' => 'required'
+        ]);
+
+        $voucher = VoucherPool::where('code',
+            $request->input('code'))->with('recipients')->with('specialoffer')->first();
+        if (null === $voucher) {
+            return response()->json(['error' => 'Voucher not found'], 400);
+        } else {
+            if ($voucher->recipients->email === $request->input('email')) {
+                if ($voucher->used) {
+                    return response()->json(['error' => 'Voucher already used!'], 400);
+                } else {
+                    if ($voucher->expires_at < new Carbon()) {
+                        return response()->json(['error' => 'Voucher expired!'], 400);
+                    } else {
+                        $voucher->used = true;
+                        $voucher->used_at = new Carbon();
+                        $voucher->update();
+
+                        return response()->json(['percentage_discount' => $voucher->specialoffer->percentage_discount],
+                            201);
+                    }
+                }
+            } else {
+                return response()->json(['error' => 'Invalid email address!'], 400);
+            }
+        }
+    }
+
+
+    /**
      * Retrieve a voucher By Id.
      * @param  int $id
      * @return Response
@@ -75,6 +116,12 @@ class VoucherPoolController extends Controller
         return response()->json($voucher, 201);
     }
 
+    /**
+     * Update a voucher
+     * @param $id
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function update($id, Request $request)
     {
         $this->isValid($request);
@@ -84,6 +131,11 @@ class VoucherPoolController extends Controller
         return response()->json($voucher, 200);
     }
 
+    /**
+     * Delete a voucher
+     * @param $id
+     * @return Response|\Laravel\Lumen\Http\ResponseFactory
+     */
     public function delete($id)
     {
         VoucherPool::findOrFail($id)->delete();

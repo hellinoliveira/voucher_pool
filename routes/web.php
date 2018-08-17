@@ -30,6 +30,8 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->get('vouchers/recipients', ['uses' => 'VoucherPoolController@showAllVouchersByEmail']);
 
+    $router->put('vouchers/validate', ['uses' => 'VoucherPoolController@validateVoucherCode']);
+
 //offers routes
     $router->get('offers', ['uses' => 'SpecialOfferController@showAllOffers']);
 

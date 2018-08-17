@@ -15,7 +15,7 @@ class VoucherPool extends Model
      *
      * @var array
      */
-    protected $fillable = ['expires_at', 'used_at', 'used'];
+    protected $fillable = ['code','recipient_id', 'expires_at', 'used_at', 'used'];
 
     /**
      * The attributes excluded from the model's JSON form.

@@ -25,7 +25,18 @@ class SpecialOffer extends Model
 
     public function voucher()
     {
-        return $this->hasMany( VoucherPool::class);
+        return $this->hasMany(VoucherPool::class);
     }
+
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function ($offer) {
+            $offer->voucher()->delete();
+        });
+    }
+
 
 }

@@ -27,4 +27,13 @@ class Recipient extends Model
     {
         return $this->hasMany(VoucherPool::class);
     }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function ($recipient) {
+            $recipient->voucher()->delete();
+        });
+    }
 }

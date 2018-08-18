@@ -3,7 +3,7 @@
 	"info": {
 		"name": "PHP CHALLENGE",
 		"_postman_id": "9cc9e6ba-c048-aa5b-f695-32fb35101359",
-		"description": "VouCherPool Project",
+		"description": "VoucherPool Project",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -18,7 +18,7 @@
 			},
 			"response": [
 				{
-					"id": "22d68065-a543-4853-bc40-4ea8a03ff6b1",
+					"id": "0986eaf6-82c6-41b4-aef7-c5963873cce9",
 					"name": "showAllVouchers",
 					"originalRequest": {
 						"url": "localhost:8000/api/vouchers",
@@ -52,7 +52,7 @@
 						{
 							"name": "date",
 							"key": "date",
-							"value": "Tue, 14 Aug 2018 12:42:08 GMT",
+							"value": "Sat, 18 Aug 2018 17:57:30 GMT",
 							"description": "The date and time that the message was sent"
 						},
 						{
@@ -69,8 +69,8 @@
 						}
 					],
 					"cookie": [],
-					"responseTime": 55,
-					"body": "[]"
+					"responseTime": 266,
+					"body": "[{\"id\":1,\"code\":\"9333584\",\"expires_at\":\"2018-09-06 13:01:21\",\"used_at\":null,\"used\":null,\"recipient_id\":11,\"special_offer_id\":11,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":2,\"code\":\"37598354\",\"expires_at\":\"2018-09-02 22:57:31\",\"used_at\":null,\"used\":null,\"recipient_id\":27,\"special_offer_id\":23,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":3,\"code\":\"89684356\",\"expires_at\":\"2018-09-07 14:39:40\",\"used_at\":null,\"used\":null,\"recipient_id\":5,\"special_offer_id\":13,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":4,\"code\":\"48478467\",\"expires_at\":\"2018-08-31 04:42:10\",\"used_at\":null,\"used\":null,\"recipient_id\":21,\"special_offer_id\":33,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":5,\"code\":\"66308641\",\"expires_at\":\"2018-08-21 22:49:47\",\"used_at\":null,\"used\":null,\"recipient_id\":15,\"special_offer_id\":49,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":6,\"code\":\"27266004\",\"expires_at\":\"2018-08-28 23:25:41\",\"used_at\":null,\"used\":null,\"recipient_id\":5,\"special_offer_id\":41,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":7,\"code\":\"83821536\",\"expires_at\":\"2018-09-14 14:29:22\",\"used_at\":null,\"used\":null,\"recipient_id\":13,\"special_offer_id\":38,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":8,\"code\":\"28540840\",\"expires_at\":\"2018-08-27 21:40:44\",\"used_at\":null,\"used\":null,\"recipient_id\":22,\"special_offer_id\":2,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":9,\"code\":\"57858838\",\"expires_at\":\"2018-08-25 13:18:57\",\"used_at\":null,\"used\":null,\"recipient_id\":44,\"special_offer_id\":38,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":10,\"code\":\"69707842\",\"expires_at\":\"2018-08-30 23:39:57\",\"used_at\":null,\"used\":null,\"recipient_id\":4,\"special_offer_id\":44,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":11,\"code\":\"39978237\",\"expires_at\":\"2018-08-24 04:34:09\",\"used_at\":null,\"used\":null,\"recipient_id\":10,\"special_offer_id\":47,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":12,\"code\":\"90421251\",\"expires_at\":\"2018-09-06 02:45:53\",\"used_at\":null,\"used\":null,\"recipient_id\":28,\"special_offer_id\":5,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":13,\"code\":\"42330272\",\"expires_at\":\"2018-09-01 21:35:46\",\"used_at\":null,\"used\":null,\"recipient_id\":4,\"special_offer_id\":26,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":14,\"code\":\"89054866\",\"expires_at\":\"2018-08-27 20:01:59\",\"used_at\":null,\"used\":null,\"recipient_id\":20,\"special_offer_id\":35,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":15,\"code\":\"98628957\",\"expires_at\":\"2018-08-23 09:34:20\",\"used_at\":null,\"used\":null,\"recipient_id\":19,\"special_offer_id\":24,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":16,\"code\":\"88495784\",\"expires_at\":\"2018-09-09 02:15:33\",\"used_at\":null,\"used\":null,\"recipient_id\":8,\"special_offer_id\":13,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":17,\"code\":\"89430785\",\"expires_at\":\"2018-09-05 01:58:13\",\"used_at\":null,\"used\":null,\"recipient_id\":42,\"special_offer_id\":1,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":18,\"code\":\"4142132\",\"expires_at\":\"2018-09-06 13:07:19\",\"used_at\":null,\"used\":null,\"recipient_id\":50,\"special_offer_id\":22,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":19,\"code\":\"73691400\",\"expires_at\":\"2018-08-18 21:35:56\",\"used_at\":null,\"used\":null,\"recipient_id\":31,\"special_offer_id\":23,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":20,\"code\":\"80534766\",\"expires_at\":\"2018-09-10 01:41:58\",\"used_at\":null,\"used\":null,\"recipient_id\":39,\"special_offer_id\":39,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":21,\"code\":\"12212572\",\"expires_at\":\"2018-09-17 14:40:27\",\"used_at\":null,\"used\":null,\"recipient_id\":37,\"special_offer_id\":20,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":22,\"code\":\"51227005\",\"expires_at\":\"2018-08-25 20:29:53\",\"used_at\":null,\"used\":null,\"recipient_id\":48,\"special_offer_id\":41,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":23,\"code\":\"24337126\",\"expires_at\":\"2018-08-25 22:44:16\",\"used_at\":null,\"used\":null,\"recipient_id\":13,\"special_offer_id\":21,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":24,\"code\":\"58836727\",\"expires_at\":\"2018-08-21 08:06:00\",\"used_at\":null,\"used\":null,\"recipient_id\":41,\"special_offer_id\":3,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":25,\"code\":\"12391700\",\"expires_at\":\"2018-08-27 19:24:50\",\"used_at\":null,\"used\":null,\"recipient_id\":8,\"special_offer_id\":29,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":26,\"code\":\"63533423\",\"expires_at\":\"2018-08-26 08:02:43\",\"used_at\":null,\"used\":null,\"recipient_id\":44,\"special_offer_id\":27,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":27,\"code\":\"93604545\",\"expires_at\":\"2018-09-15 12:40:27\",\"used_at\":null,\"used\":null,\"recipient_id\":33,\"special_offer_id\":35,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":28,\"code\":\"44574375\",\"expires_at\":\"2018-08-28 17:11:49\",\"used_at\":null,\"used\":null,\"recipient_id\":49,\"special_offer_id\":9,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":29,\"code\":\"62867253\",\"expires_at\":\"2018-09-04 11:53:39\",\"used_at\":null,\"used\":null,\"recipient_id\":50,\"special_offer_id\":40,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":30,\"code\":\"561691\",\"expires_at\":\"2018-09-04 00:19:04\",\"used_at\":null,\"used\":null,\"recipient_id\":22,\"special_offer_id\":3,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":31,\"code\":\"11806070\",\"expires_at\":\"2018-08-22 14:32:49\",\"used_at\":null,\"used\":null,\"recipient_id\":49,\"special_offer_id\":21,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":32,\"code\":\"62940229\",\"expires_at\":\"2018-08-29 21:18:57\",\"used_at\":null,\"used\":null,\"recipient_id\":33,\"special_offer_id\":16,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":33,\"code\":\"7631916\",\"expires_at\":\"2018-08-31 00:17:31\",\"used_at\":null,\"used\":null,\"recipient_id\":46,\"special_offer_id\":11,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":34,\"code\":\"47690898\",\"expires_at\":\"2018-08-27 14:06:27\",\"used_at\":null,\"used\":null,\"recipient_id\":1,\"special_offer_id\":44,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":35,\"code\":\"80677271\",\"expires_at\":\"2018-09-12 21:28:06\",\"used_at\":null,\"used\":null,\"recipient_id\":16,\"special_offer_id\":28,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":36,\"code\":\"45042427\",\"expires_at\":\"2018-09-14 03:26:38\",\"used_at\":null,\"used\":null,\"recipient_id\":5,\"special_offer_id\":40,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":37,\"code\":\"92208215\",\"expires_at\":\"2018-08-26 23:43:07\",\"used_at\":null,\"used\":null,\"recipient_id\":27,\"special_offer_id\":34,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":38,\"code\":\"87390742\",\"expires_at\":\"2018-08-28 09:33:19\",\"used_at\":null,\"used\":null,\"recipient_id\":37,\"special_offer_id\":21,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":39,\"code\":\"45739214\",\"expires_at\":\"2018-09-12 18:56:37\",\"used_at\":null,\"used\":null,\"recipient_id\":17,\"special_offer_id\":4,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":40,\"code\":\"98614984\",\"expires_at\":\"2018-09-12 06:58:59\",\"used_at\":null,\"used\":null,\"recipient_id\":8,\"special_offer_id\":16,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":41,\"code\":\"82611885\",\"expires_at\":\"2018-09-11 16:35:37\",\"used_at\":null,\"used\":null,\"recipient_id\":11,\"special_offer_id\":21,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":42,\"code\":\"27176843\",\"expires_at\":\"2018-09-16 17:56:43\",\"used_at\":null,\"used\":null,\"recipient_id\":12,\"special_offer_id\":2,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":43,\"code\":\"46779974\",\"expires_at\":\"2018-08-28 07:40:07\",\"used_at\":null,\"used\":null,\"recipient_id\":34,\"special_offer_id\":46,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":44,\"code\":\"99203844\",\"expires_at\":\"2018-08-20 20:50:08\",\"used_at\":null,\"used\":null,\"recipient_id\":30,\"special_offer_id\":11,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":45,\"code\":\"14127988\",\"expires_at\":\"2018-08-27 23:23:49\",\"used_at\":null,\"used\":null,\"recipient_id\":3,\"special_offer_id\":19,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":46,\"code\":\"93143637\",\"expires_at\":\"2018-08-24 17:59:24\",\"used_at\":null,\"used\":null,\"recipient_id\":24,\"special_offer_id\":14,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":47,\"code\":\"41314622\",\"expires_at\":\"2018-08-27 01:11:34\",\"used_at\":null,\"used\":null,\"recipient_id\":34,\"special_offer_id\":38,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":48,\"code\":\"81917924\",\"expires_at\":\"2018-08-31 00:57:53\",\"used_at\":null,\"used\":null,\"recipient_id\":6,\"special_offer_id\":47,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":49,\"code\":\"70719307\",\"expires_at\":\"2018-09-10 02:38:57\",\"used_at\":null,\"used\":null,\"recipient_id\":3,\"special_offer_id\":20,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":50,\"code\":\"57730953\",\"expires_at\":\"2018-08-29 15:07:33\",\"used_at\":null,\"used\":null,\"recipient_id\":1,\"special_offer_id\":39,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"}]"
 				}
 			]
 		},
@@ -78,7 +78,7 @@
 			"name": "Voucher@showAllVouchersByEmail",
 			"request": {
 				"url": {
-					"raw": "localhost:8000/api/vouchers/recipients?email=reichel.kay@pacocha.com",
+					"raw": "localhost:8000/api/vouchers/recipients?email=hellison@vanhack.com",
 					"host": [
 						"localhost"
 					],
@@ -91,9 +91,9 @@
 					"query": [
 						{
 							"key": "email",
-							"value": "reichel.kay@pacocha.com",
+							"value": "hellison@vanhack.com",
 							"equals": true,
-							"description": ""
+							"description": "[param]: Email"
 						}
 					],
 					"variable": []
@@ -103,7 +103,83 @@
 				"body": {},
 				"description": "show all vouchers for a given email"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "cb149184-d64e-409a-aac3-ad407dedd508",
+					"name": "Voucher@showAllVouchersByEmail",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8000/api/vouchers/recipients?email=hellison@vanhack.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vouchers",
+								"recipients"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "hellison@vanhack.com",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 18 Aug 2018 18:27:36 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "host",
+							"key": "host",
+							"value": "localhost:8000",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.20-2",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 105,
+					"body": "{\"data\":{\"recipient\":{\"id\":2,\"name\":\"Hellison Teodoro\",\"email\":\"hellison@vanhack.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 18:15:36\"},\"vouchers\":[{\"id\":1,\"code\":\"9333584\",\"expires_at\":\"2018-09-06 13:01:21\",\"used_at\":null,\"used\":null,\"recipient_id\":2,\"special_offer_id\":11,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\",\"specialoffer\":{\"id\":11,\"name\":\"Issac Gottlieb\",\"percentage_discount\":88,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"}},{\"id\":41,\"code\":\"82611885\",\"expires_at\":\"2018-09-11 16:35:37\",\"used_at\":null,\"used\":null,\"recipient_id\":2,\"special_offer_id\":21,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\",\"specialoffer\":{\"id\":21,\"name\":\"Sherwood Sanford\",\"percentage_discount\":97,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"}}]}}"
+				}
+			]
 		},
 		{
 			"name": "Vouchers@create",
@@ -117,20 +193,153 @@
 						{
 							"key": "expires_at",
 							"value": "2018-08-18 16:55:02",
-							"description": "",
-							"type": "text"
+							"type": "text",
+							"description": "Param needed: The expiration date of the voucher. The code is randomly generated"
 						}
 					]
 				},
 				"description": "POST "
 			},
-			"response": []
+			"response": [
+				{
+					"id": "48cb4e06-c19d-4ae3-82af-27082a11779d",
+					"name": "Vouchers@create",
+					"originalRequest": {
+						"url": "localhost:8000/api/vouchers",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "expires_at",
+									"value": "2018-08-18 16:55:02",
+									"type": "text",
+									"description": "Param needed: The expiration date of the voucher. The code is randomly generated"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 18 Aug 2018 18:01:22 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "host",
+							"key": "host",
+							"value": "localhost:8000",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.20-2",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 98,
+					"body": "{\"code\":\"4a86b3b7\",\"expires_at\":\"2018-08-18 16:55:02\",\"updated_at\":\"2018-08-18 18:01:22\",\"created_at\":\"2018-08-18 18:01:22\",\"id\":51}"
+				}
+			]
+		},
+		{
+			"name": "ShowAllRecipients",
+			"request": {
+				"url": "localhost:8000/api/recipients",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "List all recipients available"
+			},
+			"response": [
+				{
+					"id": "ed365a45-b783-4433-a35a-12b3f5c3d183",
+					"name": "ShowAllRecipients",
+					"originalRequest": {
+						"url": "localhost:8000/api/recipients",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 18 Aug 2018 18:29:20 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "host",
+							"key": "host",
+							"value": "localhost:8000",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.20-2",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 98,
+					"body": "[{\"id\":1,\"name\":\"Mr. Cesar Feeney DVM\",\"email\":\"casimir.wilkinson@spencer.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":2,\"name\":\"Hellison Teodoro\",\"email\":\"hellison@vanhack.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 18:15:36\"},{\"id\":3,\"name\":\"Garrett Konopelski\",\"email\":\"haley.rey@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":4,\"name\":\"Ms. Berneice Terry I\",\"email\":\"lindgren.lue@blanda.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":5,\"name\":\"Dr. Peter Bashirian III\",\"email\":\"nico21@balistreri.biz\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":6,\"name\":\"John Leffler DDS\",\"email\":\"schumm.damien@ryan.net\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":7,\"name\":\"Lambert Klein\",\"email\":\"jermey.becker@hand.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":8,\"name\":\"Anna Schuster Sr.\",\"email\":\"torey.gaylord@runolfsdottir.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":9,\"name\":\"Joaquin Stracke\",\"email\":\"ggutmann@schamberger.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":10,\"name\":\"Adele Barton\",\"email\":\"ekshlerin@hotmail.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":11,\"name\":\"Prof. Delaney Mertz II\",\"email\":\"effie.towne@pfannerstill.org\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":12,\"name\":\"Miss Sabrina Murphy DDS\",\"email\":\"elenor56@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":13,\"name\":\"Cindy Gusikowski\",\"email\":\"chet40@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":14,\"name\":\"Amaya Cruickshank\",\"email\":\"heaney.margaretta@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":15,\"name\":\"Rickey Steuber\",\"email\":\"anita.dickens@gmail.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":16,\"name\":\"Tabitha Wolf\",\"email\":\"quitzon.finn@walsh.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":17,\"name\":\"Michaela Abshire\",\"email\":\"francisca72@hotmail.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":18,\"name\":\"Broderick Swaniawski\",\"email\":\"lilian.nicolas@hotmail.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":19,\"name\":\"Mrs. Kiana Ebert\",\"email\":\"crist.garry@hotmail.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":20,\"name\":\"Mr. Zachariah Kutch V\",\"email\":\"myriam.sipes@crooks.biz\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":21,\"name\":\"Dock Block\",\"email\":\"jasmin64@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":22,\"name\":\"Merlin Weimann V\",\"email\":\"arvilla10@reichel.biz\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":23,\"name\":\"Stefan Gulgowski\",\"email\":\"hoppe.vernie@fritsch.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":24,\"name\":\"Jarvis Ratke\",\"email\":\"nola.stiedemann@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":25,\"name\":\"Dolly Thiel\",\"email\":\"gutmann.alexandrine@tremblay.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":26,\"name\":\"Name Dooley\",\"email\":\"kwaters@jenkins.biz\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":27,\"name\":\"Mr. Mortimer Stroman\",\"email\":\"marilyne59@fahey.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":28,\"name\":\"Alec Quigley\",\"email\":\"taryn.lindgren@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":29,\"name\":\"Elda Zboncak\",\"email\":\"asa.hartmann@mayer.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":30,\"name\":\"Silas Hills\",\"email\":\"clint.mante@gmail.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":31,\"name\":\"Barbara Moen\",\"email\":\"carmstrong@wiza.net\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":32,\"name\":\"Hal Mante\",\"email\":\"tess78@hotmail.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":33,\"name\":\"Elta Hammes\",\"email\":\"ewitting@wolf.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":34,\"name\":\"Miss Rebecca Pfannerstill\",\"email\":\"terry.imogene@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":35,\"name\":\"Prof. Darwin Thiel II\",\"email\":\"peter97@yahoo.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":36,\"name\":\"Mrs. Ena Dietrich IV\",\"email\":\"deondre.jast@graham.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":37,\"name\":\"Mrs. Isabell Gerlach II\",\"email\":\"rolfson.drake@feest.biz\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 17:57:01\"},{\"id\":38,\"name\":\"Peyton Stokes\",\"email\":\"miracle.mcdermott@grimes.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":39,\"name\":\"Deondre Rice\",\"email\":\"javon.trantow@hotmail.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":40,\"name\":\"Brad Williamson II\",\"email\":\"sadams@hotmail.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":41,\"name\":\"Dallas Hermiston\",\"email\":\"runte.mozelle@hotmail.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":42,\"name\":\"Alexandre Schamberger I\",\"email\":\"heaven01@koss.org\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":43,\"name\":\"Carmel Mante\",\"email\":\"hobart.maggio@hotmail.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":44,\"name\":\"Ms. Burdette Mills DVM\",\"email\":\"velva97@gmail.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":45,\"name\":\"Heather Koelpin\",\"email\":\"cglover@kutch.org\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":46,\"name\":\"Mr. Adam Roob MD\",\"email\":\"guido.rogahn@wilkinson.biz\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":47,\"name\":\"Will Koepp\",\"email\":\"enrico.denesik@anderson.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":48,\"name\":\"Dr. Neha Prohaska MD\",\"email\":\"lexus34@yahoo.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":49,\"name\":\"Marlin Brakus\",\"email\":\"keebler.nathanial@gmail.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":50,\"name\":\"Mrs. Alivia Collins PhD\",\"email\":\"damien.bauch@dibbert.com\",\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":51,\"name\":\"Hellison Teodoro\",\"email\":\"hellison.oliveira@gmail.com\",\"created_at\":\"2018-08-18 17:59:43\",\"updated_at\":\"2018-08-18 17:59:43\"}]"
+				}
+			]
 		},
 		{
 			"name": "recipient@create",
 			"request": {
 				"url": {
-					"raw": "localhost:8000/api/recipients?name=Hellison Teodoro&email=hellison.",
+					"raw": "localhost:8000/api/recipients?name=Hellison Teodoro&email=hellison.oliveira@gmail.com",
 					"host": [
 						"localhost"
 					],
@@ -148,7 +357,7 @@
 						},
 						{
 							"key": "email",
-							"value": "hellison.",
+							"value": "hellison.oliveira@gmail.com",
 							"equals": true,
 							"description": ""
 						}
@@ -160,7 +369,88 @@
 				"body": {},
 				"description": "Create a new recipient using POST method"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "452e0d80-41fa-4f93-b56b-deef2db9e62a",
+					"name": "recipient@create",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8000/api/recipients?name=Hellison Teodoro&email=hellison.oliveira@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recipients"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Hellison Teodoro",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "hellison.oliveira@gmail.com",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [],
+						"body": {}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 18 Aug 2018 17:59:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "host",
+							"key": "host",
+							"value": "localhost:8000",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.20-2",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 84,
+					"body": "{\"name\":\"Hellison Teodoro\",\"email\":\"hellison.oliveira@gmail.com\",\"updated_at\":\"2018-08-18 17:59:43\",\"created_at\":\"2018-08-18 17:59:43\",\"id\":51}"
+				}
+			]
 		},
 		{
 			"name": "recipient@update",
@@ -180,14 +470,12 @@
 						{
 							"key": "name",
 							"value": "Hellison Teodoro",
-							"equals": true,
-							"description": ""
+							"equals": true
 						},
 						{
 							"key": "email",
 							"value": "hellison@hotmail.fr",
-							"equals": true,
-							"description": ""
+							"equals": true
 						}
 					],
 					"variable": []
@@ -196,8 +484,7 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
+						"value": "application/x-www-form-urlencoded"
 					}
 				],
 				"body": {
@@ -206,20 +493,124 @@
 						{
 							"key": "name",
 							"value": "Hellison Oliveira",
-							"description": "",
 							"type": "text"
 						},
 						{
 							"key": "email",
 							"value": "hellison@hotmail.fr",
-							"description": "",
 							"type": "text"
 						}
 					]
 				},
 				"description": "Edit a recipient using PUT method"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "7a19fa7b-3827-4b3d-8499-427bb451ab70",
+					"name": "recipient@update",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8000/api/recipients/2?name=Hellison Teodoro&email=hellison@vanhack.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recipients",
+								"2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Hellison Teodoro",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "hellison@vanhack.com",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": "",
+								"warning": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Hellison Oliveira",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "hellison@hotmail.fr",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 18 Aug 2018 18:15:36 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "host",
+							"key": "host",
+							"value": "localhost:8000",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.20-2",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 97,
+					"body": "{\"id\":2,\"name\":\"Hellison Teodoro\",\"email\":\"hellison@vanhack.com\",\"created_at\":\"2018-08-18 17:57:01\",\"updated_at\":\"2018-08-18 18:15:36\"}"
+				}
+			]
 		},
 		{
 			"name": "showAllOffers",
@@ -230,7 +621,63 @@
 				"body": {},
 				"description": "The offers route checks for all the offers resources."
 			},
-			"response": []
+			"response": [
+				{
+					"id": "5ef37fb2-353c-45db-9b53-757ec1dfa096",
+					"name": "showAllOffers",
+					"originalRequest": {
+						"url": "localhost:8000/api/offers",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 18 Aug 2018 17:58:41 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "host",
+							"key": "host",
+							"value": "localhost:8000",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.20-2",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 93,
+					"body": "[{\"id\":1,\"name\":\"Bianka Johnson\",\"percentage_discount\":22,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":2,\"name\":\"Xzavier Hauck\",\"percentage_discount\":20,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":3,\"name\":\"Abner White\",\"percentage_discount\":24,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":4,\"name\":\"Prof. Rogelio Wolff\",\"percentage_discount\":79,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":5,\"name\":\"Lavina Mohr\",\"percentage_discount\":11,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":6,\"name\":\"Ryder Cassin\",\"percentage_discount\":22,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":7,\"name\":\"Prof. Alexandro Collins MD\",\"percentage_discount\":8,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":8,\"name\":\"Jesse Cummings DDS\",\"percentage_discount\":9,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":9,\"name\":\"Dexter Dicki\",\"percentage_discount\":79,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":10,\"name\":\"Mr. Sherwood Kunze Jr.\",\"percentage_discount\":25,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":11,\"name\":\"Issac Gottlieb\",\"percentage_discount\":88,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":12,\"name\":\"Hailee Kozey\",\"percentage_discount\":43,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":13,\"name\":\"Aaliyah Jones\",\"percentage_discount\":9,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":14,\"name\":\"Carmel Schmeler\",\"percentage_discount\":16,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":15,\"name\":\"Christ Ledner\",\"percentage_discount\":77,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":16,\"name\":\"Albertha Hilpert Jr.\",\"percentage_discount\":97,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":17,\"name\":\"Icie Macejkovic\",\"percentage_discount\":59,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":18,\"name\":\"Roger Jacobi IV\",\"percentage_discount\":61,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":19,\"name\":\"Maximilian Balistreri\",\"percentage_discount\":10,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":20,\"name\":\"Anahi Watsica\",\"percentage_discount\":36,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":21,\"name\":\"Sherwood Sanford\",\"percentage_discount\":97,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":22,\"name\":\"Fabian Ullrich Sr.\",\"percentage_discount\":24,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":23,\"name\":\"Fern Funk Jr.\",\"percentage_discount\":31,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":24,\"name\":\"Prof. Dovie Conroy\",\"percentage_discount\":51,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":25,\"name\":\"Dr. Morris Koepp PhD\",\"percentage_discount\":81,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":26,\"name\":\"Prof. Verona Ankunding\",\"percentage_discount\":93,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":27,\"name\":\"Alva Dibbert\",\"percentage_discount\":2,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":28,\"name\":\"Annamarie Rice\",\"percentage_discount\":85,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":29,\"name\":\"Tod Schamberger\",\"percentage_discount\":60,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":30,\"name\":\"Dr. Deron Rice\",\"percentage_discount\":38,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":31,\"name\":\"Mrs. Dovie Kunze\",\"percentage_discount\":66,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":32,\"name\":\"Thalia Armstrong\",\"percentage_discount\":84,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":33,\"name\":\"Ila Fahey\",\"percentage_discount\":35,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":34,\"name\":\"Garry Treutel\",\"percentage_discount\":98,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":35,\"name\":\"Kailyn Schimmel\",\"percentage_discount\":3,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":36,\"name\":\"Roel Mayer DDS\",\"percentage_discount\":15,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":37,\"name\":\"Dr. Easter Goldner II\",\"percentage_discount\":37,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":38,\"name\":\"Ms. Irma O'Kon\",\"percentage_discount\":30,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":39,\"name\":\"Kayley Becker\",\"percentage_discount\":11,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":40,\"name\":\"Miss Amy Reynolds\",\"percentage_discount\":22,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":41,\"name\":\"Prof. Elissa Crooks\",\"percentage_discount\":30,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":42,\"name\":\"Orrin Boyle\",\"percentage_discount\":72,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":43,\"name\":\"Isac Lang\",\"percentage_discount\":54,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":44,\"name\":\"Karolann Hartmann\",\"percentage_discount\":94,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":45,\"name\":\"Gardner Dickinson\",\"percentage_discount\":97,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":46,\"name\":\"Benny Terry V\",\"percentage_discount\":38,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":47,\"name\":\"Cleta Schuster\",\"percentage_discount\":54,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":48,\"name\":\"Jeremie Leannon\",\"percentage_discount\":99,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":49,\"name\":\"Brown Herman\",\"percentage_discount\":26,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"},{\"id\":50,\"name\":\"Josie Will\",\"percentage_discount\":18,\"created_at\":\"2018-08-18 17:57:02\",\"updated_at\":\"2018-08-18 17:57:02\"}]"
+				}
+			]
 		},
 		{
 			"name": "Offer@create",
@@ -266,7 +713,88 @@
 				"body": {},
 				"description": "Create a new offer using POST method"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "e7ac39f6-a38e-49d3-8813-277bdc6a5fba",
+					"name": "Offer@create",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8000/api/offers?name=mega discount&percentage_discount=90",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"offers"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "mega discount",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "percentage_discount",
+									"value": "90",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [],
+						"body": {}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 18 Aug 2018 18:16:13 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "host",
+							"key": "host",
+							"value": "localhost:8000",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.20-2",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 104,
+					"body": "{\"name\":\"mega discount\",\"percentage_discount\":\"90\",\"updated_at\":\"2018-08-18 18:16:13\",\"created_at\":\"2018-08-18 18:16:13\",\"id\":51}"
+				}
+			]
 		}
 	]
 }

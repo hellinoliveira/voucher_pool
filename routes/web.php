@@ -17,7 +17,9 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix' => 'api'], function () use ($router) {
 
-//vouchers routes
+    //vouchers routes
+    $router->get('vouchers/recipients', ['uses' => 'VoucherPoolController@showAllByEmail']);
+
     $router->get('vouchers', ['uses' => 'VoucherPoolController@showAllVouchers']);
 
     $router->get('vouchers/{id}', ['uses' => 'VoucherPoolController@showOneVoucher']);
@@ -26,13 +28,11 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->delete('vouchers/{id}', ['uses' => 'VoucherPoolController@delete']);
 
-    $router->put('vouchers/{id}', ['uses' => 'VoucherPoolController@update']);
-
-    $router->get('vouchers/recipients', ['uses' => 'VoucherPoolController@showAllByEmail']);
-
     $router->put('vouchers/validate', ['uses' => 'VoucherPoolController@validateCode']);
 
-//offers routes
+    $router->put('vouchers/{id}', ['uses' => 'VoucherPoolController@update']);
+
+    //offers routes
     $router->get('offers', ['uses' => 'SpecialOfferController@showAllOffers']);
 
     $router->get('offers/{id}', ['uses' => 'SpecialOfferController@showOneSpecialOffer']);
@@ -43,7 +43,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->put('offers/{id}', ['uses' => 'SpecialOfferController@update']);
 
-//recipients routes
+    //recipients routes
     $router->get('recipients', ['uses' => 'RecipientController@showAllRecipients']);
 
     $router->get('recipients/{id}', ['uses' => 'RecipientController@showOneRecipient']);

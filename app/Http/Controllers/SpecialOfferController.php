@@ -15,18 +15,29 @@ use Illuminate\Http\Request;
 class SpecialOfferController extends Controller
 {
 
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function showAllOffers()
     {
         return response()->json(SpecialOffer::all());
     }
 
 
+    /**
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function showOneSpecialOffer($id)
     {
         return response()->json(SpecialOffer::find($id));
     }
 
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function create(Request $request)
     {
 
@@ -36,6 +47,11 @@ class SpecialOfferController extends Controller
         return response()->json($offer, 201);
     }
 
+    /**
+     * @param $id
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function update($id, Request $request)
     {
         $this->isValid($request);
@@ -45,6 +61,10 @@ class SpecialOfferController extends Controller
         return response()->json($offer, 200);
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Http\Response|\Laravel\Lumen\Http\ResponseFactory
+     */
     public function delete($id)
     {
         SpecialOffer::findOrFail($id)->delete();

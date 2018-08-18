@@ -5,6 +5,8 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 /**
+ *
+ * I think that that structure was the best option to hold the voucher information since it can only be used once.
  * Class VoucherPool
  * @package App
  */
@@ -56,6 +58,7 @@ class VoucherPool extends Model
     }
 
     /**
+     * Generating a random code with strings and numbers
      * @param int $length
      * @return bool|string
      */

@@ -58,6 +58,7 @@ class VoucherPoolController extends Controller
     /**
      * Validates a voucher based on a given email and code and returns
      * its status if it cant be used or use it and return the percentage of discount.
+     * I
      *
      * @param Request $request email and code required
      *
@@ -169,7 +170,7 @@ class VoucherPoolController extends Controller
     private function isValid(Request $request)
     {
         $this->validate($request, [
-            'expires_at' => 'required|datetime',
+            'expires_at' => 'required|date',
         ]);
     }
 
@@ -184,6 +185,6 @@ class VoucherPoolController extends Controller
         $voucher->used_at = new Carbon();
         $voucher->update();
 
-        return response()->json(['percentage_discount' => $voucher->specialoffer->percentage_discount],201);
+        return response()->json(['percentage_discount' => $voucher->specialoffer->percentage_discount], 201);
     }
 }

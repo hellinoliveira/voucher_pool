@@ -11,9 +11,13 @@ class RecipientTableSeeder extends Seeder
      */
     public function run()
     {
-//        \App\Recipient::truncate();
 
         $faker = \Faker\Factory::create();
+
+        \App\Recipient::create([
+            'name' => 'Hellison',
+            'email' => 'Hellison.oliveira@gmail.com'
+        ]);
 
         for ($i = 0; $i < 50; $i++) {
             \App\Recipient::create([

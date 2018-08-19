@@ -1,5 +1,14 @@
 # CHALLENGE #
 
+### To run the project you need to: ###
+
+1. run composer install
+1. cp env.example .env
+1. Edit .env file to set your mysql user, password and database name
+1. run php artisan migrate
+1. run php artisan db:seed
+
+
 ##### Entities #####
 
 - Recipient

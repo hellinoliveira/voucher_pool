@@ -14,18 +14,29 @@ use Illuminate\Http\Request;
 class RecipientController extends Controller
 {
 
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function showAllRecipients()
     {
         return response()->json(Recipient::all());
     }
 
 
+    /**
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function showOneRecipient($id)
     {
         return response()->json(Recipient::find($id));
     }
 
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function create(Request $request)
     {
         $this->isValid($request);
@@ -35,6 +46,11 @@ class RecipientController extends Controller
         return response()->json($recipient, 201);
     }
 
+    /**
+     * @param $id
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function update($id, Request $request)
     {
         $this->isValid($request);
@@ -44,6 +60,10 @@ class RecipientController extends Controller
         return response()->json($recipient, 200);
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Http\Response|\Laravel\Lumen\Http\ResponseFactory
+     */
     public function delete($id)
     {
         Recipient::findOrFail($id)->delete();

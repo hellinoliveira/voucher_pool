@@ -58,7 +58,6 @@ class VoucherPoolController extends Controller
     /**
      * Validates a voucher based on a given email and code and returns
      * its status if it cant be used or use it and return the percentage of discount.
-     * I
      *
      * @param Request $request email and code required
      *
@@ -151,6 +150,7 @@ class VoucherPoolController extends Controller
     }
 
     /**
+     * I handled the expections of ModelNotFoundException at app\Exceptions\Handler.php@render
      * Delete a voucher
      * @param $id
      * @return Response|\Laravel\Lumen\Http\ResponseFactory
@@ -160,7 +160,6 @@ class VoucherPoolController extends Controller
         VoucherPool::findOrFail($id)->delete();
 
         return response('Deleted Successfully', 200);
-//        return response()->json(null, 204);
     }
 
     /**
@@ -175,6 +174,8 @@ class VoucherPoolController extends Controller
     }
 
     /**
+     * I create a separated method that do only one thing, update the voucher
+     * Based on the clean code principle
      * Update voucher and return its percentage_discount
      * @param $voucher
      * @return \Illuminate\Http\JsonResponse

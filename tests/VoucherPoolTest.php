@@ -19,6 +19,31 @@ class VoucherPoolTest extends TestCase
         $this->seeStatusCode(400);
     }
 
+    /**
+     * /vouchers/validate [PUT]
+     */
+    public function testUseVoucher()
+    {
+        $voucher = \App\VoucherPool::first();
+        $recipient = \App\Recipient::find($voucher->recipient_id);
+
+        $parameters = [
+            'code' => $voucher->code,
+            'email' => $recipient->email,
+        ];
+
+        $this->put("/api/vouchers/validate", $parameters, []);
+        $this->seeStatusCode(201);
+        $this->seeJsonStructure(['percentage_discount']);
+        $this->seeInDatabase('voucher', [
+            'id' => $voucher->id,
+            'used' => true,
+            'code' => $voucher->code,
+            'special_offer_id' => $voucher->special_offer_id,
+            'used_at' => new \Carbon\Carbon()
+        ]);
+    }
+
 
     /**
      * /vouchers [DELETE]
